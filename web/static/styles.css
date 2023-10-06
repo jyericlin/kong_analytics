@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+}
+
+#chat-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+#messages div {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#messages div:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+#input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 20px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
+/* Add the following styles to your existing styles.css */
+.user-message {
+  background: url('your-user-icon.png') no-repeat left center;
+  padding-left: 40px;
+  /* Adjust as needed based on your icon's dimensions */
+  background-size: 30px;
+  /* Adjust as needed */
+}
+
+.ai-message {
+  background: url('your-ai-icon.png') no-repeat left center;
+  padding-left: 40px;
+  /* Adjust as needed based on your icon's dimensions */
+  background-size: 30px;
+  /* Adjust as needed */
+}
+
+.highlighted-code {
+  background-color: #cecece;  /* Slightly darker background */
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;  /* You might need this to apply padding and border-radius */
+  white-space: pre-wrap;  /* Preserves both spaces and line breaks */
+  /* Add any other styles you want for the code */
+}
+
+.executing {
+  color: #11ae18;
+}
+
+.execute-output{
+  color: #ffffff;
+  background-color: #292929 !important;
+  border-radius: 5px;
+  white-space: pre-wrap; 
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
